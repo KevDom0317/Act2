@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concatenar Cadenas</title>
+    <script>
+        function concatenarCadenas() {
+            var cadenas = [];
+            var cadena;
+            while (cadena !== null) {
+                cadena = prompt("Por favor, ingresa una cadena de texto:");
+                if (cadena !== null) {
+                    cadenas.push(cadena);
+                }
+            }
+            if (cadenas.length > 0) {
+                alert("Las cadenas concatenadas son: " + cadenas.join("-"));
+            }
+        }
+    </script>
+</head>
+<body onload="concatenarCadenas()">
+</body>
+</html>

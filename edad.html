@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edad para Conducir</title>
+    <script>
+        function verificarEdad() {
+            var edad = prompt("Por favor, ingresa tu edad:");
+            if (edad !== null) {
+                edad = parseInt(edad);
+                if (edad >= 18) {
+                    alert("Ya puedes conducir.");
+                } else {
+                    alert("Aún no puedes conducir.");
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="verificarEdad()">
+</body>
+</html>
